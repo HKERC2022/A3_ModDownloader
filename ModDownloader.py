@@ -167,7 +167,7 @@ def sanitize_filename(filename):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Install mod from steamworkshop")
     parser.add_argument("file", type=check_html_file, help="path to modlist")
-    parser.add_argument("-p", "--path", help="path to steamcmd.exe",type=check_steamcmd_file,default="steamcmd.exe")
+    parser.add_argument("-p", "--path", help="path to steamcmd.exe",type=check_steamcmd_file,default="~\\steamcmd\\steamcmd.exe")
     parser.add_argument("-d", "--dir", help="Download location",type=check_existing_folder,default=Path.cwd())
     args = parser.parse_args()
     appid = "107410"
